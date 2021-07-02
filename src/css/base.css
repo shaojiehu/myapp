@@ -1,0 +1,16 @@
+@font-face{
+    font-family:'kaiti';
+    src:url('./kaiti.ttf'),     
+ }
+body {
+    padding: 0;
+    margin: 0 ; 
+    font-family: 'kaiti'; 
+}
+body html {
+   font-size:10px; 
+}
+/*
+*
+**/
+
