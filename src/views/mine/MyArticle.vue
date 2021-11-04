@@ -1,11 +1,16 @@
 <template>
   <div class="article-container">
- 1231412543
+   文章页
   </div>
 </template>
 <script>
+
 export default {
-  name:'MyArticle'
+  name:'MyArticle',
+  components:{
+    
+  }
+
 }
 </script>
 <style scoped>

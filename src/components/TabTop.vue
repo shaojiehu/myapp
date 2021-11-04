@@ -1,7 +1,7 @@
 <template>
   <div class="tab-top">
       <div class="tab-top-search">
-        <div class="search-box">
+        <div class="search-box" @click="goSearch">
            <img src="../images/search.png"/>
            <span>搜索感兴趣的内容</span>
         </div>
@@ -15,6 +15,9 @@ export default {
   methods:{
     loginClick(){
       this.$router.push('login')
+    },
+    goSearch(){
+      this.$router.push('search')
     }
   }
 }
@@ -22,7 +25,7 @@ export default {
 <style scoped>
 .tab-top{
     display: flex;
-    height:44px;
+    height:4.4rem;
 }
 .tab-top-search{
    width:75% ;
@@ -36,26 +39,29 @@ export default {
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  width:200px;
-  height:30px;
-  background-color: #e6e6e6;
-  border-radius: 15px;
+  width:20rem;
+  height:3rem;
+  background-color: #F4F4F4;
+  border-radius: 1.5rem;
   text-align: center;
-  line-height: 30px;
+  line-height: 3rem;
 }
 .search-box img{
-    width:14px;
-    height:14px;
+    width:1.4rem;
+    height:1.4rem;
     display: inline-block;
-    margin: -2px 2px ;
+    margin: -0.2rem 0.2rem ;
 }
 .search-box span{
-    color: #8a8a8a;
-    font-size: 14px;
+    color: #9A9A9A;
+    font-size: 1.2rem;
+    letter-spacing:0.1rem;
 }
 .tab-top-login{
    text-align: center;
-   line-height: 44px;
-   color:#ea6f5a ;
+   line-height: 4.4rem;
+   color:#E96F5A ;
+   font-size: 1.2rem;
+   letter-spacing: 0.1rem;
 }
 </style>

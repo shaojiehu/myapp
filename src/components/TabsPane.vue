@@ -19,10 +19,10 @@ export default {
 <style scoped>
 .tabs-pane{
    flex: 1;
-   width:60px;
-   height:40px;
-   border-bottom: 2px solid red;
+   width:6rem;
+   height:4rem;
+   border-bottom: 0.2rem solid red;
    text-align: center;
-   line-height: 40px;
+   line-height: 4rem;
 }    
 </style>

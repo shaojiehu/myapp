@@ -4,10 +4,10 @@
         <div class="scan">
           <img src="../../images/scan.png" alt="">
         </div> 
-        <div class="edit">
+        <div class="edit"  @click="addArticle">
           <img src="../../images/pen.png" alt="">
         </div>  
-    </div>
+    </div> 
     <div class="top-container">
         <div class="top-container-one">
             <div class="message">
@@ -36,22 +36,20 @@
             </div>
         </div>
         <div class="container-info">
-            <div class="">
-
-            </div>
         </div>
     </div>
-    
-  
-  </div>
   </div>
 </template>
 <script>
   import Category from '../../components/Category'
 export default {
-  name:'Mine',
   components:{
     Category
+  },
+  methods:{
+    addArticle(){
+      this.$router.push('/add')
+    }
   }
 }
 </script>
@@ -63,97 +61,97 @@ export default {
 }
 .top-container-none{
   width: 100%;
-  height:50px;
+  height:5rem;
   background-color: #ea6f5a; 
   position: relative;
 }
 .scan{
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 2rem;
+  left: 2rem;
 }
 .scan img{
-  width:25px;
-  height:25px;
+  width:2.5rem;
+  height:2.5rem;
 }
 .edit{
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 2rem;
+  right: 2rem;
 }
 .edit img{
-  width:25px;
-  height:25px;
+  width:2.5rem;
+  height:2.5rem;
 }
 .top-container{
   width: 100%;
-  height:100px;
+  height:10rem;
   background-color: #ea6f5a;
   border-radius: 200% / 0 0 100% 100%;
   position: relative;
 }
 .top-container-one{
   position: absolute;
-  width:280px;
-  height:160px;
+  width:28rem;
+  height:16rem;
   background-color:#FAFAFA;
-  border-radius: 10px;
-  top:40px;
-  left:20px;
-  right:20px;
+  border-radius: 1rem;
+  top:4rem;
+  left:2rem;
+  right:2rem;
 }
-.container-info{
+/* .container-info{
   position: absolute;
-  width:280px;
-  height:160px;
+  width:28rem;
+  height:16rem;
   background-color:#FAFAFA;
-  border-radius: 10px;
-  top:220px;
-  left:20px;
-  right:20px;
-}
+  border-radius: 1rem;
+  top:22rem;
+  left:20rem;
+  right:20rem;
+} */
 
 .message{
   position: relative;
 }
 .message img{
   position: absolute;
-  width:60px;
-  height:60px;
-  border-radius: 30px;
-  top: 20px;
-  left: 10px;
+  width:6rem;
+  height:6rem;
+  border-radius: 3rem;
+  top: 2rem;
+  left: 1rem;
 }
 .message-nickname{
   position: absolute;
-  top: 30px;
-  left: 100px;
+  top: 3rem;
+  left: 10rem;
   display: inline-block;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 .follow-count{
   position: absolute;
-  top: 50px;
-  left: 100px;
-  font-size: 12px;
+  top: 5rem;
+  left: 10rem;
+  font-size: 1.2rem;
 }
 .follow-count span{
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 .fan-count{
   position: absolute;
-  top: 50px;
-  left: 150px;
-  font-size: 12px;
+  top: 5rem;
+  left: 15rem;
+  font-size: 1.2rem;
 }
 .fan-count span{
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 .category{
   position: absolute;
-  top:100px;
+  top:10rem;
   display: flex;
   width:100%;
 }
@@ -163,12 +161,12 @@ export default {
 
 .category-icon img{ 
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
 
 }
 .category-text{
-  font-size: 12px;
+  font-size: 1.2rem;
   text-align: center;
 }
 

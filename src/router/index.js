@@ -9,6 +9,7 @@ const Message = () => import('../views/message/Message')
 const Mine = () => import('../views/mine/Mine')
 const Article = () => import('../views/mine/MyArticle')
 const Login = () => import('../views/login/Login')
+const Search = () => import('../views/search/Search')
 const routes = [
   {
     path:'/',
@@ -19,6 +20,7 @@ const routes = [
      component:Index,
      meta: {
       footShow: true, // true显示，false隐藏
+      title:'首页'
      },
   },
   
@@ -27,13 +29,15 @@ const routes = [
     component:Follow,
     meta: {
       footShow: true, // true显示，false隐藏
+      title:'关注'
      },
   },
   {
     path:'/add',
     component:Add,
     meta: {
-      footShow: true, // true显示，false隐藏
+      footShow: false,  // true显示，false隐藏
+      title:'发文章'
      },
   },
   {
@@ -41,6 +45,7 @@ const routes = [
     component:Message,
     meta: {
       footShow: true, // true显示，false隐藏
+      title:'消息'
      },
   },
   {
@@ -48,6 +53,7 @@ const routes = [
     component:Mine,
     meta: {
       footShow: true, // true显示，false隐藏
+      title:'我的'
      },
   },
   {
@@ -55,6 +61,7 @@ const routes = [
     component:Article,
     meta: {
       footShow: false, // true显示，false隐藏
+      title:'我的文章'
      },
   },
   {
@@ -62,12 +69,32 @@ const routes = [
     component:Login,
     meta: {
       footShow: false, // true显示，false隐藏
+      title:'登录'
+     },
+  },
+  {
+    path:'/search',
+    component:Search,
+    meta: {
+      footShow: false, // true显示，false隐藏
+      title:'搜索'
      },
   }
 ]
 const router = new VueRouter({
   mode: 'history',
   routes
+})
+router.beforeEach((to,from,next)=>{
+  if(localStorage.getItem('user') ==='hushaojie'){
+     next()
+  }else{
+    alert("你无权访问页面")
+  }
+  
+})
+router.afterEach((to,from)=>{
+  document.title = to.meta.title
 })
 const originalPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push (location) {

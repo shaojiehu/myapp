@@ -14,11 +14,11 @@
           <img slot="item-icon-act" src="./assets/images/follow-active.png" alt=""/>
           <div slot="item-text">关注</div>
       </TabBarItem>
-      <TabBarItem path='/add'>
+      <!-- <TabBarItem path='/add'>
           <img  slot="item-icon" src="./assets/images/add.png" alt=""/>
           <img  slot="item-icon-act" src="./assets/images/add-active.png" alt=""/>
           <div slot="item-text">星球</div>
-      </TabBarItem>
+      </TabBarItem> -->
       <TabBarItem path='/message'>
           <img slot="item-icon" src="./assets/images/message.png" alt=""/>
           <img slot="item-icon-act" src="./assets/images/message-active.png" alt=""/>
@@ -43,9 +43,9 @@ export default {
     }
   },
   beforeCreate(){
-    const deviceWidth = window.screen.width;
-    const deviceHeight = window.screen.height;
-    console.log(deviceWidth,deviceHeight);
+    // const deviceWidth = window.screen.width;
+    // const deviceHeight = window.screen.height;
+    // console.log(deviceWidth,deviceHeight);
   },
   watch:{
     $route(to,from){

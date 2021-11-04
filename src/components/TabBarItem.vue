@@ -34,15 +34,18 @@ export default {
   text-align: center; 
 }
 .tab-bar-item img{
-  margin-top: 5px;
-  width:20px;
-  height:20px;
+  margin-top: 0.5rem;
+  width:2rem;
+  height:2rem;
 }
 .tab-bar-item div{
-  font-size: 12px;
+  -webkit-text-size-adjust:none; 
+  font-size:1rem; 
+  -webkit-transform : scale(0.8); 
+  letter-spacing: 0.1rem;
 }
 .active{
-    color:#ea6f5a
+    color:#D67868
 }
 
 

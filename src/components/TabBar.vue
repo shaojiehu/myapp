@@ -16,11 +16,11 @@ export default {
 .tab-bar{
   display: flex;
   width:100%;
-  height:49px; 
+  height:5rem; 
   background-color: #fff;
   position: fixed;
   bottom: 0;
-  border-top: 0.5px solid #ccc;
+  border-top: 0.05rem solid #ccc;
   left:0;
   right:0;
 }  

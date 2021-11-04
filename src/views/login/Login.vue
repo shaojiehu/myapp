@@ -5,7 +5,9 @@
      </div>
      <div class="clear"></div>
      <div class="login-form">
-         123
+        <div class="login-title">
+           手机验证码登录
+        </div>
      </div> 
      <div class="login-button">
         
@@ -13,6 +15,7 @@
   </div>
 </template>
 <script>
+
 export default {
   name:"Login",
   methods:{
@@ -31,23 +34,26 @@ export default {
 }
 .back-icon{
   position: relative;
-  height:60px;  
+  height:6rem;  
 }
 .back-icon img{
   position: absolute;  
-  width:15px;
-  height:15px;
+  width:1.5rem;
+  height:1.5rem;
   display: block;
-  top:20px;
-  right:20px;
+  top:2rem;
+  right:2rem;
 }
 .clear{
     clear: both;
 }
 .login-form{
-  position: relative;  
+  position: relative; 
+  padding:1.5rem; 
 }
-.login-button{
-
+.login-title{
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
 }
 </style>

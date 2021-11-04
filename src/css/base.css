@@ -1,14 +1,16 @@
 @font-face{
-    font-family:'kaiti';
-    src:url('./kaiti.ttf'),     
+    font-family:'qingniaohuaguang';
+    src:url('./qingniaohuaguang.ttf'),     
  }
 body {
     padding: 0;
     margin: 0 ; 
-    font-family: 'kaiti'; 
+    font-family: 'qingniaohuaguang'; 
+    width:100%;
+    overflow-x: hidden;
 }
 body html {
-   font-size:10px; 
+   font-size:1rem; 
 }
 /*
 *
